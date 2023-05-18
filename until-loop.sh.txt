@@ -1,0 +1,31 @@
+#!/bin/bash
+
+
+
+
+# while loop conditional expression is true
+
+# until loop conditional expression is false
+
+#Host down check status.
+
+
+echo -e "Please enter the ip address to check ping: c\"
+
+read -r ip
+
+until ping -c 3 $ip
+
+
+do
+    
+	echo "host is still down"
+    
+	sleep 1
+
+
+done
+
+
+
+echo "Host is up now"
